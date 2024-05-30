@@ -1,0 +1,40 @@
+*{
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: orange;
+}
+h{
+    color:orangered;
+}
+o{
+    color: orange;
+}
+w{
+    color: wheat;
+}
+g{
+    color: green;
+}
+h3{
+    margin-top: 80px;
+    color: aquamarine;
+
+}
+fieldset{
+    width: 400px;
+    
+}
+h4{
+    color: chartreuse;
+}
+legend{
+    color: yellow;
+}
+a{
+    text-decoration: none;
+    font-size: xx-large;
+}

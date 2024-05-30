@@ -1,0 +1,12 @@
+*{
+    background-color: cornflowerblue;
+    color: black;
+    font: 1em sans-serif;
+}
+h1{
+    font-size: 10vh;
+}
+a{
+    text-decoration: none;
+    font-size: xx-large;
+}

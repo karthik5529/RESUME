@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: azure;
+}
+.logo{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+.whatsapp{
+    cursor: pointer;
+    color: chartreuse;
+    font-size: xx-large;
+    padding-left: 25px;
+    
+}
+.wts{
+    margin-left: 20px;
+    width: 200px;
+}
+.ig{
+    margin-left: 20px;
+    width: 200px;
+}
+.instagram{
+    cursor: pointer;
+    color: darkmagenta;
+    font-size: xx-large;
+    padding-left: 25px;
+    
+}
+.mil{
+    margin-left: 20px;
+    width: 200px;
+}
+.mail{
+    cursor: pointer;
+    color: rgb(84, 182, 243);
+    font-size: xx-large;
+    padding-left: 35px;
+    
+}
+a{
+    text-decoration: none;
+    font-size: xx-large;
+}
+@media all and (max-width:700px){
+    
+    
+    .logo{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+}
