@@ -1,10 +1,16 @@
 *{
-    background-color: #000;
     color: #fff;
     margin: 0;
     padding: 0;
 }
-h1{
+*::selection{
+    color: black;
+    background-color: wheat;
+}
+.top{
+    background-color: black;
+}
+.top h1{
     color: orange;
 }
 h{
@@ -19,7 +25,7 @@ w{
 g{
     color: green;
 }
-h3{
+.top h3{
     margin-top: 80px;
     color: aquamarine;
 
@@ -28,7 +34,7 @@ fieldset{
     width: 400px;
     
 }
-h4{
+.top h4{
     color: chartreuse;
 }
 legend{
@@ -37,4 +43,56 @@ legend{
 a{
     text-decoration: none;
     font-size: xx-large;
+}
+.end{
+    padding-top: 10px;
+    height: 350px;
+    width: 100%;
+    background-color: orange;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.end h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+.links a:hover{
+    cursor: pointer;
+    color: black;
+}
+.mainpage{
+    padding-left: 30%;
+}
+
+@media all and (max-width:630px) {
+.end{
+height: 450px;
+width: 100%;
+}
+.mainpage{
+    padding-left: 5%;
+}
+}
+@media all and (max-width:390px) {
+    .top{
+        font-size: large;
+        width: 150%;
+        background-color: black;
+    }
+    iframe{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+    .end{
+        width: 150%;
+    }
 }
