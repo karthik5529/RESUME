@@ -1,98 +1,173 @@
 *{
-    color: #fff;
     margin: 0;
     padding: 0;
 }
 *::selection{
-    color: black;
-    background-color: wheat;
+    color: blue;
 }
-.top{
-    background-color: black;
+.head{
+    background:linear-gradient(to right, #121FCF 0%, #CF1512 100%);;
 }
-.top h1{
-    color: orange;
+.head h1{
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-bottom: 1%;
 }
-h{
-    color:orangered;
+.head h1 {
+    color: #f75706;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid gray; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end) infinite,
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:linear-gradient(to right, #121FCF 0%, #CF1512 100%);; }
+  }
+  .body {
+    background:linear-gradient(to right, #121FCF 0%, #CF1512 100%);;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+.body h1 {
+    background: #FF0000;
+    background: linear-gradient(to left, #FF0000 0%, #FFFF00 50%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-o{
-    color: orange;
-}
-w{
-    color: wheat;
-}
-g{
-    color: green;
-}
-.top h3{
-    margin-top: 80px;
-    color: aquamarine;
+  .iam{
+    color: white;
+      font-size: 55px;
+      padding: 15px;
+      font-family: sans-serif;
+  }
+  .text{
+    color: white;
+      border-right: 2px solid red;
+      font-size: 55px;
+      font-family: sans-serif;
+      color: rgb(255, 30, 0);
+  }
+  .box{
+    margin-top: 5%;
+    width: 80%;
+    padding-bottom: 3%;
+    background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  }
 
+  .box h2{
+    padding-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  .box h3{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .box h4{
+    margin-top: 2%;
+    color: blue;
+    background: linear-gradient(to right, #A7CFDF 0%, #23538A 100%);
+    font-size: larger;
+    font-weight: bolder;
+    height: 50px;
+    width: 100px;
+    border-radius: 20%;
+  }
+  .box h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+.img1{
+  margin-top: 1%;
+  border-radius: 50%;
 }
-fieldset{
-    width: 400px;
-    
+.box h5 {
+  color: gray;
+  font-size: large;
+  font-weight: bold;
 }
-.top h4{
-    color: chartreuse;
+
+@property --num {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
 }
-legend{
-    color: yellow;
+
+cnt::before {
+  counter-reset: my-counter var(--num);
+  content: counter(my-counter);
+  animation: count 5s ease-in-out infinite alternate;
 }
-a{
-    text-decoration: none;
-    font-size: xx-large;
+
+@keyframes count {
+  to { --num: 10; }
+}
+cnt {
+  color: magenta;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.body h6{
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+@media all and (max-width : 550px) {
+  .iam , .text {
+    font-size: 2.4rem;
+  }
+  .box h2{
+    font-size: large;
+  }
+} 
+@media all and (max-width : 420px) {
+  .iam , .text {
+    font-size: 1.8rem;
+  }
 }
 .end{
-    padding-top: 10px;
-    height: 350px;
-    width: 100%;
-    background-color: orange;
-    color: whitesmoke;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 400px;
+  width: 100%;
+  background-color: orange;
 }
 .end h3{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .links a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
+  margin-left: 25px;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 .links a:hover{
-    cursor: pointer;
-    color: black;
+  cursor: pointer;
+  color: black;
 }
 .mainpage{
-    padding-left: 30%;
+  padding-left: 30%;
 }
 
 @media all and (max-width:630px) {
 .end{
-height: 450px;
-width: 100%;
+height: 500px;
 }
 .mainpage{
-    padding-left: 5%;
+  padding-left: 5%;
 }
-}
-@media all and (max-width:390px) {
-    .top{
-        font-size: large;
-        width: 150%;
-        background-color: black;
-    }
-    iframe{
-        width: 250px;
-        height: 250px;
-        margin-bottom: 15px;
-    }
-    .end{
-        width: 150%;
-    }
 }
