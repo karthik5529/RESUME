@@ -129,17 +129,13 @@ cnt {
 }
 @media all and (max-width : 550px) {
   .iam , .text {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   .box h2{
     font-size: large;
   }
 } 
-@media all and (max-width : 420px) {
-  .iam , .text {
-    font-size: 1.8rem;
-  }
-}
+
 .end{
   height: 400px;
   width: 100%;
